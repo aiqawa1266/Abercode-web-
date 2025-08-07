@@ -1,0 +1,200 @@
+/* ===== RESET DAN DASAR ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #ffffff;
+  color: #003366;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  padding: 15px 0;
+  background-color: #fff;
+}
+
+.navbar .container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 3px solid #003366;
+}
+
+.logo {
+  height: 70px;
+}
+
+.menu a {
+  margin: 0 15px;
+  font-weight: bold;
+  color: #003366;
+}
+
+.hire-btn {
+  background-color: #ff6565;
+  color: white;
+  padding: 8px 20px; /* Ukuran lebih kecil dan memanjang */
+  border-radius: 8px; /* Sudut sedikit membulat */
+  display: inline-block;
+  box-shadow: 2px 3px 0 #e60000;
+  font-weight: 500;
+  font-size: 15px; /* Ukuran teks sedikit lebih kecil */
+  transition: background-color 0.3s;
+  white-space: nowrap;
+  margin-left: 15px; /* Geser sedikit ke kanan */
+  width: 160px;
+  text-align: center;
+}
+
+.hire-btn:hover {
+  background-color: #e60000;
+}
+
+/* ===== HERO SECTION ===== */
+.hero {
+  padding: 60px 0;
+}
+
+.hero .container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 0 20px;
+  flex-wrap: wrap; /* biar responsive */
+}
+
+.text-content {
+  flex: 1;
+  position: relative;
+}
+
+/* Judul */
+.text-content h1 {
+  font-size: 55px;
+  font-weight: 700;
+  color: #1d3f72;
+  margin-bottom: 20px;
+  line-height: 1.2;
+  transform: translateY(-165px); /* Geser ke bawah */
+  margin-left: -25px;
+}
+
+/* Baris Paragraf + Tombol */
+.cta-row {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.cta-row p {
+  font-size: 30px;
+  margin: 0;
+  line-height: 1.2;
+  transform: translateY(-165px); /* Geser ke bawah */
+  margin-left: -25px;
+}
+
+/* Tombol CTA */
+.cta-btn {
+  background-color: #1d3f72;
+  color: white;
+  padding: 10px 30px; /* Ukuran lebih kecil dan memanjang */
+  border-radius: 8px; /* Sudut sedikit membulat */
+  display: inline-block;
+  box-shadow: 2px 3px 0 #ccc;
+  font-weight: 500;
+  font-size: 15px; /* Ukuran teks sedikit lebih kecil */
+  transition: background-color 0.3s;
+  white-space: nowrap;
+  margin-left: 100px; /* Geser sedikit ke kanan */
+  width: 160px;
+  text-align: center;
+  transform: translateY(-150px); /* Geser ke bawah */
+}
+
+.cta-btn:hover {
+  background-color: #002b5c;
+}
+
+/* Dekor Titik */
+.dots {
+  position: absolute;
+  bottom: 15px; /* dari -100px jadi 0px → naik ke atas */
+  left: 0;
+  width: 240px;
+  opacity: 0.7;
+  margin-left: -25px;
+}
+
+/* ===== GAMBAR KOMPUTER & GARIS DIAGONAL ===== */
+.image-wrapper {
+  flex: 1;
+  position: relative;
+}
+
+.computer-img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 4px;
+  z-index: 1;
+  position: relative;
+  margin-left: 100px;
+  transform: translateY(-80px); /* Geser ke bawah */
+}
+
+/* Garis dekorasi diagonal */
+.diagonal-line {
+  position: absolute;
+  height: 4px;
+  width: 120%;
+  background-color: #1d3f72;
+  z-index: 2;
+}
+
+.top-line {
+  top: 0;
+  left: -10%;
+  transform: rotate(45deg);
+  transform-origin: left;
+}
+
+.bottom-line {
+  bottom: 0;
+  left: -10%;
+  transform: rotate(-45deg);
+  transform-origin: left;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .hero .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cta-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu {
+    display: none; /* Tambah ini jika ingin buat menu mobile nanti */
+  }
+}
