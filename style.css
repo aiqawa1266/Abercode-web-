@@ -198,3 +198,132 @@ a {
     display: none; /* Tambah ini jika ingin buat menu mobile nanti */
   }
 }
+
+/* ==== ABOUT US SECTION ====*/
+.about {
+  padding: 60px 0;
+  background-color: #f9f9f9;
+}
+
+.about .container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.about-content {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+/*BaGian Kiri*/
+.about-left {
+  flex: 1;
+}
+
+.about-title {
+  font-size: 50px;
+  transform: translateY(20px);
+  font-weight: bold;
+  color: #ff6565;
+  margin-bottom: 20px;
+}
+
+.about-images {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.about-img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-left: 130px;
+}
+
+.about-img.main {
+  height: 800px;
+  transform: translateY(-305px);
+}
+
+.small-images {
+  display: flex;
+  gap: 10px;
+}
+
+/*Bagian Kanan*/
+.about-right {
+  flex: 1;
+}
+
+.about-right p {
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.about-right .text {
+  margin-left: 70px;
+  line-height: 1.5;
+}
+
+.highlight {
+  color: #ff6565;
+  font-weight: bold;
+}
+
+/* Header Visi & Misi */
+.visi-header,
+.misi-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+  margin-left: -20px;
+}
+
+.icon-visi,
+.icon-misi {
+  width: 20px;
+  height: 20px;
+}
+
+.visi h3,
+.misi h3 {
+  color: #1d3f72;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/*List Misi*/
+.misi ul {
+  padding-left: 20px;
+}
+
+.misi ul {
+  margin-bottom: 6px;
+  line-height: 1.5;
+  margin-left: 50px;
+}
+
+/* Responisve */
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+  }
+
+  .about-left,
+  .about-right {
+    flex: 100%;
+  }
+
+  .about-images {
+    align-items: center;
+  }
+
+  .small-images {
+    justify-content: center;
+  }
+}
